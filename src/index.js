@@ -9,18 +9,24 @@ import {
 } from 'react-router-dom'
 import Explore from './components/Explore'
 import Results from './components/Results'
+import reducer from './reducer/co-opReducer'
+import {Provider} from 'react-redux';
+import {createStore} from 'redux'
+let store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()) ;
 
 ReactDOM.render(
   <React.StrictMode>
+    <Provider store={store}>
     <Router>
       <Layout>
         <Switch>
             <Route exact path='/' component={App}/>
             <Route path='/results' component={Results}/>
-            <Route path='/explore' components={Explore}/>
+            <Route path='/explore' component={Explore}/>
         </Switch>
       </Layout>
     </Router>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

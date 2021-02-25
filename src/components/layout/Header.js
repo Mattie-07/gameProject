@@ -11,10 +11,10 @@ const Header = () => {
     <Link className="navbar-brand textChange navText" to="#">LandJumpFly</Link>
         <ul className="navbar-nav d-flex ml-auto">
             <li className="nav-item">
-                <Link className="nav-link textChange" to="/pageOne">Explore</Link>
+                <Link className="nav-link textChange" to="/explore">Explore</Link>
             </li>
             <li className="nav-item">
-                <Link className="nav-link textChange" to="/pageTwo">Page Two</Link>
+                <Link className="nav-link textChange" to="/questionnaire">Page Two</Link>
             </li>
         </ul>
     </nav>

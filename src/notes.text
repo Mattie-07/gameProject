@@ -1,0 +1,6 @@
+I need to look into creating a funcition at a later date that would use  
+button.style.display = "none";
+after the button is clicked. For right now, I would want the user to just click through the questions and to have the state working correctly. 
+
+If someone where to click no on the option for the 
+work on the next functionality for my fucntions in the api

@@ -33,4 +33,36 @@ export const maxofflinedecreaseAction = () => {
   }
 }
 
+export const onlinecoopincreaseAction = () => {
+  return {
+    type: 'MAXNUMBEROFONLINECOOPINCREASE',
+  }
+}
+export const onlinecoopdecreaseAction  = () => {
+  return {
+    type: 'MAXNUMBEROFONLINECOOPDECREASE',
+  }
+}
+export const offlineNotCoopIncreaseAction = () => {
+  return {
+    type: 'OFFLINEPLAYERSINCREASE',
+  }
+}
+export const offlineNotCoopDecreaseAction   = () => {
+  return {
+    type: 'OFFLINEPLAYERSDECREASE',
+  }
+}
+
+export const onlineNotCoopIncreaseAction = () => {
+  return {
+    type: 'ONLINEPLAYERINCREASE',
+  }
+}
+export const onlineNotCoopDecreaseAction   = () => {
+  return {
+    type: 'ONLINEPLAYERDECREASE',
+  }
+}
+
 

@@ -5,6 +5,8 @@
     clip-path: polygon(64% 0, 100% 0, 100% 29%, 41% 100%, 0 100%, 0 68%);
     position: absolute;
     z-index: -1;
+    /* background-size: cover;
+    background-attachment: fixed; */
 }
 /* .body2{
     height:100%;
@@ -16,12 +18,19 @@
 } */
 
 .textChange{
-    color:#55A630;
+    color:#2B9348;
     text-align: center;
     justify-content: center;
     padding-top:20%
 }
 
+.textChange2{
+    color:#2B9348;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 20px;
+}
 .navText{
     color:#007F5F
 }
@@ -31,4 +40,20 @@
 .btn{
     background-color: #80B918;
     z-index:0
+}
+
+.center{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pad{
+    padding-left: 100px;
+}
+
+.buttonStyle{
+    border-radius: 10px;
+    background-color: #2B9348;
+    color:#FFFF3F
 }

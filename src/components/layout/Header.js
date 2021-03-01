@@ -8,13 +8,13 @@ const Header = () => {
     return(
     <>
     <nav className="navbar navbar-expand-lg bg-light container-fluid">
-    <Link className="navbar-brand textChange navText" to="#">LandJumpFly</Link>
+    <Link className="navbar-brand textChange navText" to="/">LandJumpFly</Link>
         <ul className="navbar-nav d-flex ml-auto">
             <li className="nav-item">
                 <Link className="nav-link textChange" to="/explore">Explore</Link>
             </li>
             <li className="nav-item">
-                <Link className="nav-link textChange" to="/questionnaire">Page Two</Link>
+                <Link className="nav-link textChange" to="/games">Games</Link>
             </li>
         </ul>
     </nav>

@@ -8,7 +8,7 @@ import {
   Route, Switch
 } from 'react-router-dom'
 import Explore from './components/Explore'
-import Results from './components/Results'
+import Games from './components/Games'
 import reducer from './reducer/co-opReducer'
 import {Provider} from 'react-redux';
 import {createStore} from 'redux'
@@ -21,7 +21,7 @@ ReactDOM.render(
       <Layout>
         <Switch>
             <Route exact path='/' component={App}/>
-            <Route path='/results' component={Results}/>
+            <Route path='/games' component={Games}/>
             <Route path='/explore' component={Explore}/>
         </Switch>
       </Layout>

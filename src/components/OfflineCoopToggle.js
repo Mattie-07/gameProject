@@ -12,7 +12,7 @@ const CoopToggle = () =>{
             <ButtonGroup toggle className="mb-2">
             <ToggleButton
                 type="checkbox"
-                variant="secondary"
+                style={{backgroundColor:"#2B9348", color:"#FFFF3F", border:"white", margin:"20px"}}
                 checked={campaignCoop}
                 value="1"
                 onChange={(e) => dispatch(offlinecoopAction())}

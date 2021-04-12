@@ -1,23 +1,40 @@
 import React from "react";
 import {Link} from 'react-router-dom'
 import '../../assets/styles.css'
+import {FaBars} from 'react-icons/fa'
+import {NavigationBar, NavLogo, NavigationContainer, MobileIcon, NavMenu, NavItem, NavLinks, NavButton, NavButtonLink} 
+from './HeaderStyle'
 
 
 
 const Header = () => {
     return(
     <>
-    <nav className="navbar navbar-expand-lg bg-light container-fluid">
-    <Link className="navbar-brand textChange navText" to="/">LandJumpFly</Link>
-        <ul className="navbar-nav d-flex ml-auto">
-            <li className="nav-item">
-                <Link className="nav-link textChange" to="/explore">Explore</Link>
-            </li>
-            <li className="nav-item">
-                <Link className="nav-link textChange" to="/games">Games</Link>
-            </li>
-        </ul>
-    </nav>
+        <NavigationBar>
+            <NavigationContainer>
+                <NavLogo to='/'>Matthew</NavLogo>
+                <MobileIcon>
+                    <FaBars/>
+                </MobileIcon>
+                <NavMenu>
+                    <NavItem>
+                        <NavLinks to="about">About</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks to="discover">Discover</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks to="services">Services</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks to="signup">Sign Up</NavLinks>
+                    </NavItem>
+                    <NavButton>
+                        <NavButtonLink to="/signin">Sign In</NavButtonLink>
+                    </NavButton>
+                </NavMenu>
+            </NavigationContainer>
+        </NavigationBar>
     </>
     )
 }

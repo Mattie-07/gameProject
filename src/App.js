@@ -1,6 +1,6 @@
 import React from "react";
 import './assets/styles.css'
-import Button from './components/Button'
+
 
 
 const App = () => {
@@ -15,7 +15,6 @@ const App = () => {
         <br/>
         <br/>
         <br/>
-        <Button />
     </h1>
     
     </>

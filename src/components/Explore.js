@@ -8,7 +8,7 @@ import OnlineCoopCounter from './OnlineCoopCounter'
 import OfflineNotCoopCounter from './OfflineNotCoopPlayerCount'
 import OnlineNotCoopCounter from './OnlineNotCoopCounter'
 import {Container, Row, Col} from 'react-bootstrap'
-import Button from './Button'
+// import Button from './Button'
 import JumpHigher from './FlyButton'
 
 const Explore = () => {

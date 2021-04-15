@@ -5,12 +5,12 @@ import {Link as LinkS} from 'react-scroll'
 export const NavigationBar = styled.nav`
     display:flex;
     justify-content:center;
-    /* margin-top:-80px; */
+    margin-top:-80px;
     position:sticky;
     align-items:center;
     height:55px;
     top:0;
-    background:teal;
+    background:${({scrollNav}) => (scrollNav ? '#000' :'transparent')};
     z-index:10;
     font-size:1rem;
 

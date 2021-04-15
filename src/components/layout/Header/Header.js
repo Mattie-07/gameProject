@@ -1,15 +1,33 @@
-import React from "react";
+import React,{useState, useEffect} from "react";
 import {Link} from 'react-router-dom'
 import {FaBars} from 'react-icons/fa'
 import {NavigationBar, NavLogo, NavigationContainer, MobileIcon, NavMenu, NavItem, NavLinks, NavButton, NavButtonLink} 
 from './HeaderStyle'
-
+import {IconContext} from 'react-icons/lib'
 
 
 const Header = ({toggle}) => {
+
+    const [scrollNav, setScrollNav] = useState(false)
+
+    const changeNav = () => {
+        if(window.scrollY >= 80){
+            setScrollNav(true)
+        }   else{
+            setScrollNav(false)
+        }
+    }
+
+    useEffect(() =>{
+        window.addEventListener('scroll', changeNav)
+
+    },[])
+
     return(
+
     <>
-        <NavigationBar>
+    <IconContext.Provider value={{color:'#fff'}}>
+        <NavigationBar scrollNav={scrollNav}>
             <NavigationContainer>
                 <NavLogo to='/'>Matthew</NavLogo>
                 <MobileIcon onClick={toggle}>
@@ -34,6 +52,7 @@ const Header = ({toggle}) => {
                 </NavMenu>
             </NavigationContainer>
         </NavigationBar>
+    </IconContext.Provider>
     </>
     )
 }

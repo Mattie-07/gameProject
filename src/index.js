@@ -7,6 +7,7 @@ import {
   BrowserRouter as Router,
   Route, Switch
 } from 'react-router-dom'
+import SigninPage from './pages/'
 import Explore from './components/Explore'
 import Games from './components/Games'
 import reducer from './reducer/co-opReducer'
@@ -21,6 +22,7 @@ ReactDOM.render(
       <Layout>
         <Switch>
             <Route exact path='/' component={App}/>
+            <Route path='/signin' component={SigninPage}/>
             <Route path='/games' component={Games}/>
             <Route path='/explore' component={Explore}/>
         </Switch>

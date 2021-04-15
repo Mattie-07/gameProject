@@ -33,18 +33,18 @@ export const homeObjTwo = {
 };
 
 export const homeObjThree = {
-    id:'services',
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
+    id:'services1',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
     topLine: 'Get access to as many games as you would like!',
     headline: 'Finding the right game for you and the family.',
     description: 'Answer a few questions and be able to find games that you can play with your friends and family. It only takes a few quick moments!',
     buttonLabel: 'Get Started',
-    imgStart: false,
+    imgStart: true,
     img: require('../../assets/game2.svg').default,
     alt:'Dice',
-    dark:false,
+    dark: true,
     primary:false,
-    darkText:true,
+    darkText:false,
 };

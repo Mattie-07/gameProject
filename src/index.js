@@ -7,9 +7,10 @@ import {
   BrowserRouter as Router,
   Route, Switch
 } from 'react-router-dom'
-import SigninPage from './pages/'
-import Explore from './components/Explore'
-import Games from './components/Games'
+import Signin from './components/Signin'
+import Home from './pages/Home'
+import Explore from './pages/Explore'
+import Games from './pages/Games'
 import reducer from './reducer/co-opReducer'
 import {Provider} from 'react-redux';
 import {createStore} from 'redux'
@@ -21,8 +22,8 @@ ReactDOM.render(
     <Router>
       <Layout>
         <Switch>
-            <Route exact path='/' component={App}/>
-            <Route path='/signin' component={SigninPage}/>
+            <Route exact path='/' component={Home}/>
+            <Route path='/signin' component={Signin}/>
             <Route path='/games' component={Games}/>
             <Route path='/explore' component={Explore}/>
         </Switch>

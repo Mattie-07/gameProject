@@ -18,14 +18,15 @@ const Layout = (props) =>{
     return (<>
             <Header toggle={toggle}/>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
-            <HeroSection/>
+            {/* <HeroSection/>
             <InfoSection {...homeObjOne} />
             <InfoSection {...homeObjTwo} />
             <InfoSection {...homeObjThree} />
-            <Services/>
+            <Services/> */}
+            {props.children}
             <Footer/>
         
-            {props.children}
+
             {/* Whatever components that is put inside the brackets <Component>Example</Component> will inherit all of the components above...Header,Sidebar,HeroSection, ect */}
             </>
     )

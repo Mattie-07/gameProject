@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import Layout from './components/layout/Layout'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
@@ -11,6 +10,7 @@ import Signin from './components/Signin'
 import Home from './pages/Home'
 import Explore from './pages/Explore'
 import Games from './pages/Games'
+import Question from './pages/Question'
 import reducer from './reducer/co-opReducer'
 import {Provider} from 'react-redux';
 import {createStore} from 'redux'
@@ -25,6 +25,7 @@ ReactDOM.render(
             <Route exact path='/' component={Home}/>
             <Route path='/signin' component={Signin}/>
             <Route path='/games' component={Games}/>
+            <Route path='/questions' component={Question}/>
             <Route path='/explore' component={Explore}/>
         </Switch>
       </Layout>

@@ -20,6 +20,7 @@ const HeroSection = () => {
                 <HeroContent>Gaming Landing Page
                 <HeroP>Sign up today and save time on your next game night</HeroP>
                 <HeroBtnWrapper>
+
                     <Button to="signup" onMouseEnter={onHover}
                     onMouseLeave={onHover}>
                         Get Started {hover ? <ArrowForward/> : <ArrowRight/>}

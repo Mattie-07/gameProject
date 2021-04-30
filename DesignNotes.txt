@@ -1,0 +1,5 @@
+The 2nd page can be designed one of two ways, I can have it to where its just one big page that doesn't scroll and someone can answer the questions, and if there is additinal information that is needed, tthey would go to a 2nd page. 
+
+    The 2nd design option would be having it designed similar to the first page where the user would have the option to scroll down and see different questions. 
+
+    i sohuld be able to make the styled components once, and then import them into two different pages.

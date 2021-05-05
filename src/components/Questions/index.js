@@ -1,16 +1,45 @@
 import React from 'react'
-import {QuestionContainer, HeroSide, VideoSide} from './QuestionStyle'
+import {QuestionContainer, 
+    QuestionWrapper, 
+    VideoSide, 
+    QuestionRow, 
+    Column1,
+    VideoWrap,
+    Column2,
+    TextWrapper,
+    QuestionText,
+    Heading,
+    ButtonWrap} from './QuestionStyle'
 import Video from '../../assets/game.mp4'
 
-const QuestionHero = () => {
+const QuestionHero = ({darkBg,
+    id, 
+    topPurp, 
+    videoStart,
+    primaryQuestion
+
+    }) => {
     return (
         <>
-        <QuestionContainer>
-            <HeroSide>
-                <VideoSide autoPlay loop muted src={Video} type='video/mpg'>
-
-                </VideoSide>
-            </HeroSide>
+        <QuestionContainer darkBg={darkBg, id={id}} >
+            <QuestionWrapper>
+                <QuestionRow videoStart={videoStart}>
+                    <Column1>
+                    <VideoWrap>
+                        <VideoSide autoPlay loop muted src={Video} type='video/mpg'></VideoSide>
+                </VideoWrap>
+                </Column1>
+                <Column2>
+                    <TextWrapper>
+                        <QuestionText>{topPurp}</QuestionText>
+                        <Heading>{primaryQuestion}</Heading>
+                    </TextWrapper>
+                    <ButtonWrap>
+                        
+                    </ButtonWrap>
+                </Column2>
+                </QuestionRow>
+            </QuestionWrapper>
         </QuestionContainer>
         </>
     )

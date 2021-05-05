@@ -3,9 +3,7 @@ import {useDispatch, useSelector} from 'react-redux'
 import {campaigncoopAction} from '../actions/campaigncoopAction'
 import  '../assets/styles.css'
 
-const style = {
-    
-}
+
 
 
 const CoopToggle = () =>{

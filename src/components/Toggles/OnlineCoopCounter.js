@@ -1,8 +1,7 @@
 import {useDispatch, useSelector} from 'react-redux'    
-import {onlinecoopincreaseAction} from '../actions/campaigncoopAction'
-import {onlinecoopdecreaseAction} from '../actions/campaigncoopAction'
+import {onlinecoopincreaseAction} from '../../actions/campaigncoopAction'
+import {onlinecoopdecreaseAction} from '../../actions/campaigncoopAction'
 import {Container, Row, Col} from 'react-bootstrap'
-import '../assets/styles.css'
 
 const OfflineCounter = () => {
     

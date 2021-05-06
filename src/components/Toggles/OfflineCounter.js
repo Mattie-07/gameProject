@@ -1,7 +1,6 @@
 import {useDispatch, useSelector} from 'react-redux'    
-import {maxofflineincreaseAction} from '../actions/campaigncoopAction'
-import {maxofflinedecreaseAction} from '../actions/campaigncoopAction'
-import '../assets/styles.css'
+import {maxofflineincreaseAction} from '../../actions/campaigncoopAction'
+import {maxofflinedecreaseAction} from '../../actions/campaigncoopAction'
 import {Container, Row, Col} from 'react-bootstrap'
 
 const OfflineCounter = () => {

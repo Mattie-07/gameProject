@@ -99,6 +99,7 @@ export const Subtitle = styled.p`
 export const ButtonWrap = styled.div`
     display:flex;
     justify-content:flex-start;
+    padding:20px;
 `
 
 export const Imgwrap = styled.div`

@@ -1,6 +1,6 @@
 import {ButtonGroup, ToggleButton} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
-import {onlinecoopAction} from '../actions/campaigncoopAction'
+import {onlinecoopAction} from '../../actions/campaigncoopAction'
 
 
 const CoopToggle = () =>{

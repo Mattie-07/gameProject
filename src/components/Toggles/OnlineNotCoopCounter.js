@@ -1,8 +1,7 @@
 import {useDispatch, useSelector} from 'react-redux'    
-import {onlineNotCoopIncreaseAction} from '../actions/campaigncoopAction'
-import {onlineNotCoopDecreaseAction} from '../actions/campaigncoopAction'
+import {onlineNotCoopIncreaseAction} from '../../actions/campaigncoopAction'
+import {onlineNotCoopDecreaseAction} from '../../actions/campaigncoopAction'
 import {Container, Row, Col} from 'react-bootstrap'
-import '../assets/styles.css'
 
 const OnlineNotCoopCounter = () => {
     const dispatch = useDispatch();

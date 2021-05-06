@@ -1,21 +1,25 @@
 import React from 'react'
-import CoopToggle from '../components/CoopToggle'
-import DropinToggle from '../components/DropinToggle'
-import OfflineCoopToggle from '../components/OfflineCoopToggle'
-import OnlineCoopToggle from '../components/OnlineCoopToggle'
-import OfflineCounter from '../components/OfflineCounter'
-import OnlineCoopCounter from '../components/OnlineCoopCounter'
-import OfflineNotCoopCounter from '../components/OfflineNotCoopPlayerCount'
-import OnlineNotCoopCounter from '../components/OnlineNotCoopCounter'
+import CoopToggle from '../components/Toggles/CoopToggle'
+import DropinToggle from '../components/Toggles/DropinToggle'
+import OfflineCoopToggle from '../components/Toggles/OfflineCoopToggle'
+import OnlineCoopToggle from '../components/Toggles/OnlineCoopToggle'
+import OfflineCounter from '../components/Toggles/OfflineCounter'
+import OnlineCoopCounter from '../components/Toggles/OnlineCoopCounter'
+import OfflineNotCoopCounter from '../components/Toggles/OfflineNotCoopPlayerCount'
+import OnlineNotCoopCounter from '../components/Toggles/OnlineNotCoopCounter'
 import {Container, Row, Col} from 'react-bootstrap'
 // import Button from './Button'
-import JumpHigher from '../components/FlyButton'
+import JumpHigher from '../components/Toggles/FlyButton'
 
 const Explore = () => {
     return (
         <>
         <Container fluid>
             <Row><Col md={{offset:1}} className="textChange2">Click each toggle below that you all would be interested in </Col></Row>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <Row>
                 <Col md={{offset:6}}><CoopToggle /></Col>
             </Row>

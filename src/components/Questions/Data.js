@@ -3,6 +3,7 @@ export const QuestionObject = {
     darkBg:true,
     topPurp:'Question One!',
     videoStart:false,
-    primaryQuestion:"Would you rather play cooperatively with other people or against them?"
+    primaryQuestion:"When you play with other people would you rather play cooperatively or against them?",
+    label:'Submit'
     
 };

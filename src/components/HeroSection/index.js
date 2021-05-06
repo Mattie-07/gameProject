@@ -5,7 +5,6 @@ import {Button} from '../layout/ButtonStyle'
 
 const HeroSection = () => {
     const [hover, setHover] = useState(false)
-
     const onHover = () => {
         setHover(!hover)
     }
@@ -20,7 +19,6 @@ const HeroSection = () => {
                 <HeroContent>Gaming Landing Page
                 <HeroP>Sign up today and save time on your next game night</HeroP>
                 <HeroBtnWrapper>
-
                     <Button to="signup" onMouseEnter={onHover}
                     onMouseLeave={onHover}>
                         Get Started {hover ? <ArrowForward/> : <ArrowRight/>}

@@ -1,7 +1,6 @@
 import {useDispatch, useSelector} from 'react-redux'    
-import {offlineNotCoopIncreaseAction } from '../actions/campaigncoopAction'
-import {offlineNotCoopDecreaseAction} from '../actions/campaigncoopAction'
-import  '../assets/styles.css'
+import {offlineNotCoopIncreaseAction } from '../../actions/campaigncoopAction'
+import {offlineNotCoopDecreaseAction} from '../../actions/campaigncoopAction'
 import {Container, Row, Col} from 'react-bootstrap'
 
 const OfflineNotCoopCounter = () => {

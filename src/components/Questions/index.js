@@ -11,14 +11,16 @@ import {QuestionContainer,
     QuestionText,
     Heading,
     ButtonWrap} from './QuestionStyle'
-    import {ArrowForward, ArrowRight} from '../HeroSection/HeroStyle'
+import {ArrowForward, ArrowRight} from '../HeroSection/HeroStyle'
 import Video from '../../assets/game.mp4'
 import CoopToggle from '../Toggles/CoopToggle'
+import DropinToggle from '../Toggles/DropinToggle'
 
 
 
 
-const QuestionHero = ({darkBg,
+const QuestionHero = ({
+    darkBg,
     id, 
     topPurp, 
     videoStart,
@@ -29,6 +31,12 @@ const QuestionHero = ({darkBg,
     const [hover, setHover] = useState(false);
     const onHover = () =>{
         setHover(!hover)
+    }
+
+    const [coop, setCoop] = useState(false);
+    const coopFunction = () =>{
+        console.log("test")
+        setCoop(!coop)
     }
 
     return (
@@ -47,8 +55,9 @@ const QuestionHero = ({darkBg,
                         <Heading>{primaryQuestion}</Heading>
                     </TextWrapper>
                     <ButtonWrap>
-                        {/* <Button to='#' onClick={coopFunction}> Test</Button> */}
+                        <Button to='#' onClick={coopFunction}> Test</Button>
                         <CoopToggle/>
+                        <DropinToggle/>
                     </ButtonWrap>
                     <ButtonWrap>
                         <Button to='#' onMouseEnter={onHover} onMouseLeave={onHover}>

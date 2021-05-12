@@ -20,7 +20,7 @@ const reducer = (state, action) => {
     switch(action.type){
         case 'CAMPAIGNCOOP':
             return{
-                ...state,
+            ...state,
             campaignCoop: !state.campaignCoop,
             }
         case 'DROPIN':

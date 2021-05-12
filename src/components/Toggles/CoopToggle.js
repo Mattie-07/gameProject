@@ -10,14 +10,14 @@ const CoopToggle = () =>{
         setCoop(!coop)
     }
 
-
     const dispatch = useDispatch();
     const campaignCoop = useSelector(state => state.campaignCoop)
 
         return (
         <>
             <Button
-                toggle
+                input="checkbox"
+                type="checkbox"
                 checked={campaignCoop}
                 value="1"
                 onChange={(e) => dispatch(campaigncoopAction())}

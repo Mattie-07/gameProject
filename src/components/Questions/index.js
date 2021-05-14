@@ -55,9 +55,7 @@ const QuestionHero = ({
                         <Heading>{primaryQuestion}</Heading>
                     </TextWrapper>
                     <ButtonWrap>
-                        <Button to='#' onClick={coopFunction}> Test</Button>
                         <CoopToggle/>
-                        <DropinToggle/>
                     </ButtonWrap>
                     <ButtonWrap>
                         <Button to='#' onMouseEnter={onHover} onMouseLeave={onHover}>

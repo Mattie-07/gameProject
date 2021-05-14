@@ -3,3 +3,5 @@ The 2nd page can be designed one of two ways, I can have it to where its just on
     The 2nd design option would be having it designed similar to the first page where the user would have the option to scroll down and see different questions. 
 
     i sohuld be able to make the styled components once, and then import them into two different pages.
+
+    For whatever reason, when i add the styling from the other button, im not albe to change the state like i would need. 

@@ -14,18 +14,19 @@ import {QuestionContainer,
 import {ArrowForward, ArrowRight} from '../HeroSection/HeroStyle'
 import Video from '../../assets/game.mp4'
 import CoopToggle from '../Toggles/CoopToggle'
-import DropinToggle from '../Toggles/DropinToggle'
 
 
 
 
 const QuestionHero = ({
+    id,
     darkBg,
-    id, 
     topPurp, 
     videoStart,
     primaryQuestion,
-    label
+    label,
+    lightText,
+    qTextPurp
     }) => {
     
     const [hover, setHover] = useState(false);
@@ -33,11 +34,6 @@ const QuestionHero = ({
         setHover(!hover)
     }
 
-    const [coop, setCoop] = useState(false);
-    const coopFunction = () =>{
-        console.log("test")
-        setCoop(!coop)
-    }
 
     return (
         <>
@@ -51,14 +47,21 @@ const QuestionHero = ({
                 </Column1>
                 <Column2>
                     <TextWrapper>
-                        <QuestionText>{topPurp}</QuestionText>
-                        <Heading>{primaryQuestion}</Heading>
+                        <QuestionText qTextPurp={qTextPurp}>{topPurp}</QuestionText>
+                        <Heading lightText={lightText}>{primaryQuestion}</Heading>
                     </TextWrapper>
                     <ButtonWrap>
                         <CoopToggle/>
                     </ButtonWrap>
                     <ButtonWrap>
-                        <Button to='#' onMouseEnter={onHover} onMouseLeave={onHover}>
+                        <Button 
+                        onMouseEnter={onHover} 
+                        onMouseLeave={onHover} 
+                        onClick={(e) => {
+                            e.preventDefault();
+                            window.location.href='http://localhost:3000/questionTwo'
+                        }}
+                        >
                             {label} {hover ? <ArrowForward/> : <ArrowRight/>} </Button>
                     </ButtonWrap>
                 </Column2>

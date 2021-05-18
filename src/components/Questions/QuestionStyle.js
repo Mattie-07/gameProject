@@ -65,7 +65,7 @@ export const TextWrapper = styled.div`
 `
 
 export const QuestionText = styled.p`
-    color:#9301bf;
+    color: ${({qTextPurp}) => (qTextPurp ? `#9301bf` : `#01bf71`)};
     font-size:16px;
     line-height:16px;
     font-weight:700;
@@ -81,7 +81,7 @@ export const Heading = styled.h1`
     font-size:48px;
     line-height:1.1;
     font-weight:600;
-    color:${({lightText}) => (lightText ? `#f7f8fa` : '#010606')};
+    color:${({lightText}) => (lightText ? `#c4a1c4` : '#d5fac5')};
 
     @media screen and (max-width: 480px){
         font-size:32px;
@@ -93,7 +93,7 @@ export const Subtitle = styled.p`
     margin-bottom:35px;
     font-size:18px;
     line-height:24px;
-    color:${({darkText}) => (darkText ? '#010606' : '#fff')};
+    color:${({darkText}) => (darkText ? '#010606' : '#d5fac5')};
 `
 
 export const ButtonWrap = styled.div`
@@ -113,46 +113,4 @@ export const Img = styled.img`
     padding-right:0;
 
 `
-
-// export const QuestionContainer = styled.div`
-//     background:#0c0c0c;
-//     display:flex;
-//     justify-content:center;
-//     align-items:center;
-//     padding: 0 30px;
-//     height: 800px;
-//     z-index:1;
-
-// export const HeroSide = styled.div`
-//     position:absolute;
-//     top:15%;
-//     bottom:0;
-//     right:0;
-//     left:0;
-//     width:40%;
-//     height:80%;
-//     overflow:hidden;
-// ` 
-//     :before{
-//         content:'';
-//         position:absolute;
-//         top:0;
-//         left:0;
-//         right:0;
-//         bottom:0;
-//         background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100%), linear-gradient(180deg, rgba(0,0,0,0.4) 0%, transparent 100%);
-//         z-index:2;
-//     }
-// `
-
-// export const HeroSide = styled.div`
-//     position:absolute;
-//     top:15%;
-//     bottom:0;
-//     right:0;
-//     left:0;
-//     width:40%;
-//     height:80%;
-//     overflow:hidden;
-// ` 
 

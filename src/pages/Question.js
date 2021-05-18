@@ -4,7 +4,6 @@ import { QuestionObject } from '../components/Questions/Data'
 
 
 const Question = () => {
-    const name = "Matthew";
     return (
         <>      
         <QuestionHero {...QuestionObject}/>

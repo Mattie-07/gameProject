@@ -14,7 +14,7 @@ const CoopToggle = () =>{
                 checked={campaignCoop}
                 value="1"
                 onClick = {(e) => dispatch(campaigncoopAction())}>
-                {campaignCoop ? "coop" : "not coop"}
+                {campaignCoop ? "Teamwork? Yes!" : "Every man for themselves!"}
             </Button>
             <br />
         </>

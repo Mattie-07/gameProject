@@ -14,6 +14,7 @@ import {QuestionContainer,
 import {ArrowForward, ArrowRight} from '../HeroSection/HeroStyle'
 import Video from '../../assets/game2.mp4'
 import CoopToggle from '../Toggles/CoopToggle'
+import OfflineCoopToggle from '../Toggles/OfflineCoopToggle'
 
 
 
@@ -26,7 +27,6 @@ const QuestionHero = ({
     primaryQuestion,
     label,
     lightText,
-    darkText
     }) => {
     
     const [hover, setHover] = useState(false);
@@ -51,7 +51,7 @@ const QuestionHero = ({
                         <Heading lightText={lightText}>{primaryQuestion}</Heading>
                     </TextWrapper>
                     <ButtonWrap>
-                        <CoopToggle/>
+                        <OfflineCoopToggle/>
                     </ButtonWrap>
                     <ButtonWrap>
                         <Button 

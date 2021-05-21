@@ -1,28 +1,26 @@
-import {ButtonGroup, ToggleButton} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
 import {offlinecoopAction} from '../../actions/campaigncoopAction'
+import {Button} from '../layout/ButtonStyle'
 
 
-const CoopToggle = () =>{
+const OfflineCoopToggle = () =>{
     const dispatch = useDispatch();
-    const campaignCoop = useSelector(state => state.dropin)
+    const dropIn = useSelector(state => state.dropin)
 
         return (
         <>
-            <ButtonGroup toggle className="mb-2">
-            <ToggleButton
+            
+            <Button
                 type="checkbox"
-                style={{backgroundColor:"#2B9348", color:"#FFFF3F", border:"white", margin:"20px"}}
-                checked={campaignCoop}
+                checked={dropIn}
                 value="1"
-                onChange={(e) => dispatch(offlinecoopAction())}
-            >
-                Offline Cooperative
-            </ToggleButton>
-            </ButtonGroup>
+                onClick ={(e)=> dispatch(offlinecoopAction())}>
+                {dropIn ? "We play online": "We don't play with Randoms"}
+            </Button>
+
             <br />
         </>
         );
     }
     
-    export default CoopToggle;
+    export default OfflineCoopToggle;

@@ -1,18 +1,42 @@
 import React, {Component} from 'react'
-import Card from '../components/layout/Card'
+import Card from '../components/GameSection'
 import {data} from '../assets/data'
+import {GamesContainer, GamesWrapper} from '../components/GameSection/GameSectionStyle'
 
 
-class Games extends Component  {
-    render(){
-    return (
+const Games = () =>{
+    return(
         <>
-        {data.map(game =>{
-        return <Card key={game.id} game={game} />
-
-    })}
+        <GamesContainer>
+            <GamesWrapper>
+                {data.map(game =>{
+                    return <Card key={game.id} game={game}/> 
+                })}
+            </GamesWrapper>
+        </GamesContainer>
+        
+        
         </>
     )
+    
+    
 }
-}
+
+
+// class Games extends Component  {
+//     render(){
+//     return (
+//         <>
+//         {data.map(game =>{
+//         return <Card key={game.id} game={game} />
+
+//     })}
+//         </>
+//     )
+// }
+// }
+
+
+
+
 export default Games

@@ -4,4 +4,12 @@ The 2nd page can be designed one of two ways, I can have it to where its just on
 
     i sohuld be able to make the styled components once, and then import them into two different pages.
 
-    For whatever reason, when i add the styling from the other button, im not albe to change the state like i would need. 
+    For whatever reason, when i add the styling from the other button, im not albe to change the state like i would need. \
+    
+
+    When ensuring that the text can change when the user clicks a button make sure that the action / reducer matches with the state that is returned in the toggles.
+
+
+    maybe insteading of asking all the different questions about the toggles, I can just have either the online coop and the online questions as parameters to determine which games are going to be the ones that are going to be displayed. If I was to have to many questions then I feel like that would take away from the experience - make it aitttle too long and drawn out. So. After the thid question, I could lead them to the page that would display all of the games that would be avaialbe to play. 
+
+    I can already safely say that I've learned to use redux and React to make the webpage work. The next thing that i would have to figure out is using the backend or database perhaps to have the games display on the screen. Before I do that, I would like to display the games from the data that I alreaday have from the images I saved. Then once I get that working I can get something thats more dynamic in place.

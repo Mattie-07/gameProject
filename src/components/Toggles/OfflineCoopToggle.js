@@ -5,17 +5,17 @@ import {Button} from '../layout/ButtonStyle'
 
 const OfflineCoopToggle = () =>{
     const dispatch = useDispatch();
-    const dropIn = useSelector(state => state.dropin)
+    const offlinecoop = useSelector(state => state.offlinecoop)
 
         return (
         <>
             
             <Button
                 type="checkbox"
-                checked={dropIn}
-                value="1"
+                checked={offlinecoop}
+                value="2"
                 onClick ={(e)=> dispatch(offlinecoopAction())}>
-                {dropIn ? "We play online": "We don't play with Randoms"}
+                {offlinecoop ? "We play online": "We don't play with Randoms"}
             </Button>
 
             <br />

@@ -1,0 +1,10 @@
+- Display the images in the cards that I created.
+        Ok - so im putting the photos on hold for right now. For whatever reason im not able to display them - either they aren't able to be found or another error pops up that still becomes an issue. Displaying text isn't a problem at all. Im going to try and skip this step right now and worry later about using the API in order for me to pull pictures to be displayed on the page. 
+            What could be a potential issue is the fact that I'm using Bootsrap to display the images and since I'm trying to display the image as if its a styled component, it isn't registering. 
+        Maybe try reformatting the styled component into one that I make on my own like how it is in the Info.Style and see how that works. My final design would probably not have this feature but I still would like to know how it works to avoid something like this in the future.
+
+
+
+- Get the Cards aligned horizontally with display:flex as an outer property and use others too to adust the look and feel 
+
+As of right now, I am creating my own cards instead of using the ones created from bootstrap. I have already input the styling and now I need to test the styling that I input in order for me to move forward with the exact design Im looking for.

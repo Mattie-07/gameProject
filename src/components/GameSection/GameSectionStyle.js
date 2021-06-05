@@ -22,7 +22,7 @@ export const GamesWrapper = styled.div`
     display:grid;
     grid-template-columns:1fr 1fr 1fr;
     align-items:center;
-    grid-gap:16px;
+    grid-gap:25px;
     padding:100px 50px;
 `
 export const GameCard = styled.div`

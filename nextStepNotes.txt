@@ -8,3 +8,9 @@
 - Get the Cards aligned horizontally with display:flex as an outer property and use others too to adust the look and feel 
 
 As of right now, I am creating my own cards instead of using the ones created from bootstrap. I have already input the styling and now I need to test the styling that I input in order for me to move forward with the exact design Im looking for.
+
+
+Hell yes! I was able to add the pictures to the cards AND i was able to have them appear horizontally as well. The next step is to have the design for reach card just look alittle better.
+    Afte that, I should use the information that I have in the data to render the it on the page based on what is in the data file.
+
+

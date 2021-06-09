@@ -65,7 +65,7 @@ export const GameH2 = styled.h2`
 `
 
 export const GamesPara = styled.p`
-    font-size:1rem;
+    font-size:.5rem;
     text-align:center;
     `
 

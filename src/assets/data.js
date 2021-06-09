@@ -14,7 +14,7 @@ export const data = [{
     onlinePlayerMax:2,
     platform: null,// look for platform ids
     description:"Portal 2 is a puzzle-platform game developed by Valve. It was released in April 2011 for Windows, Mac OS X, Linux, PlayStation 3, and Xbox 360. The digital PC version is distributed online by Valve's Steam service, while all retail editions were distributed by Electronic Arts",
-    img: "Portal2cover.jpg"
+    img: ("Portal2cover.jpg")
 }
 
 ,{

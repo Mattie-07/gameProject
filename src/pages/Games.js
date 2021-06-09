@@ -10,7 +10,7 @@ const Games = () =>{
         <GamesContainer>
             <GamesWrapper>
                 {data.map(game =>{
-                    return <Card key={game.id} game={game} name={game.name}/> 
+                    return <Card key={game.id} img={game.img} name={game.name} description={game.description}/> 
                 })}
             </GamesWrapper>
         </GamesContainer>
